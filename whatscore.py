@@ -13,7 +13,7 @@ def getscore():
         res = requests.get(match_url)
         soup = BeautifulSoup(res.text, 'html.parser')
 
-        scoreDiv = soup.find('div',{'class': 'cb-lv-scrs-col'}).text # cb-text-complete
+        scoreDiv = soup.find('div',{'class': 'cb-lv-scrs-col'}).text 
         
         try:
             additionalMessage =  soup.find('div',{'class': 'cb-text-complete'}).text
