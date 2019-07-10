@@ -15,3 +15,7 @@ pip3 install requests
 cd whatsthescore
 python3 whatscore.py
 ```
+
+## Sample Screenshots
+
+![Screenshot 1](https://images2.imgbox.com/9a/c1/OlMPPPoi_o.png)
