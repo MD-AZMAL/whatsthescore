@@ -13,8 +13,15 @@ def getscore():
         res = requests.get(match_url)
         soup = BeautifulSoup(res.text, 'html.parser')
 
-        scoreDiv = soup.find('div',{'class': 'cb-lv-scrs-col'}).text
-        additionalMessage = soup.find('div',{'class': 'cb-text-live'}).text
+        scoreDiv = soup.find('div',{'class': 'cb-lv-scrs-col'}).text # cb-text-complete
+        
+        try:
+            additionalMessage =  soup.find('div',{'class': 'cb-text-complete'}).text
+        except:
+            try:
+                additionalMessage = soup.find('div',{'class': 'cb-text-live'}).text
+            except:
+                additionalMessage = ''
 
         if scoreDiv != prevScore:
 
