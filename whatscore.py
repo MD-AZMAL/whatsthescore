@@ -1,5 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
+import os
+import subprocess as sp
 
 match_url = 'https://www.cricbuzz.com/cricket-match/live-scores'
 
@@ -12,3 +14,4 @@ additionalMessage = soup.find('div',{'class': 'cb-text-live'})
 print(scoreDiv.text)
 print(additionalMessage.text)
 
+sp.run(['notify-send','{}\r{}'.format(scoreDiv.text,additionalMessage.text)])
