@@ -18,4 +18,4 @@ python3 whatscore.py
 
 ## Sample Screenshots
 
-![Screenshot 1](https://images2.imgbox.com/0a/92/CRT4fMs2_o.png)
+![Screenshot 1](https://images2.imgbox.com/81/15/LkA0brtb_o.png)
