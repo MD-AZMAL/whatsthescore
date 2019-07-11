@@ -46,6 +46,7 @@ def getscore():
 
         prevScore = scoreDiv
 
+        time.sleep(5000)
 
 if __name__ == '__main__':
     try:
