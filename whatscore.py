@@ -11,7 +11,7 @@ def notify_me(match, scoreDiv, additionalMessage):
     print(match)
     print(scoreDiv)
     print(additionalMessage)
-    print()
+    # print()
     sp.run(['notify-send', '{}\r{}\r{}'.format(match, scoreDiv, additionalMessage)])
 
 
